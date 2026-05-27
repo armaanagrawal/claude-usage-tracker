@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Usage Tracker",
+  "version": "1.0",
+  "description": "Tracks Claude.ai usage limits for menu bar display",
+  "permissions": [
+    "nativeMessaging",
+    "alarms",
+    "cookies"
+  ],
+  "host_permissions": [
+    "https://claude.ai/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
