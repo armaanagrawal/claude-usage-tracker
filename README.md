@@ -42,7 +42,7 @@ Updated 10:48 PM
 ## Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/claude-usage-tracker/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/armaanagrawal/claude-usage-tracker/main/install.sh | bash
 ```
 
 The installer handles everything. The only manual step is loading the Chrome extension (Chrome requires a human click for security) — the script will walk you through it.
