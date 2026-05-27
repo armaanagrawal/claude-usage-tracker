@@ -2,8 +2,6 @@
 
 A lightweight macOS menu bar widget that tracks your **Claude.ai Pro session usage** in real time — with a colour-coded battery icon that shifts from green → amber → red as your limit fills up.
 
-![Menu bar showing 92% remaining in green](https://placeholder.com/screenshot)
-
 ## What it shows
 
 | Menu bar | Meaning |
