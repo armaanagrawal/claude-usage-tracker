@@ -37,7 +37,7 @@ async function fetchAndSend() {
 chrome.runtime.onInstalled.addListener(fetchAndSend);
 chrome.runtime.onStartup.addListener(fetchAndSend);
 
-chrome.alarms.create("refresh", { periodInMinutes: 5 });
+chrome.alarms.create("refresh", { periodInMinutes: 1 });
 chrome.alarms.onAlarm.addListener((alarm) => {
   if (alarm.name === "refresh") fetchAndSend();
 });

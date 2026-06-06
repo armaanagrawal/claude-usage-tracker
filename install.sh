@@ -101,7 +101,7 @@ async function fetchAndSend() {
 
 chrome.runtime.onInstalled.addListener(fetchAndSend);
 chrome.runtime.onStartup.addListener(fetchAndSend);
-chrome.alarms.create("refresh", { periodInMinutes: 5 });
+chrome.alarms.create("refresh", { periodInMinutes: 1 });
 chrome.alarms.onAlarm.addListener((alarm) => {
   if (alarm.name === "refresh") fetchAndSend();
 });
@@ -132,7 +132,7 @@ EOF
 chmod +x "$INSTALL_DIR/native_host.py"
 
 # SwiftBar plugin
-cat > "$PLUGINS_DIR/claude-usage.5m.py" << 'EOF'
+cat > "$PLUGINS_DIR/claude-usage.1m.py" << 'EOF'
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # <swiftbar.title>Claude Usage</swiftbar.title>
@@ -219,7 +219,7 @@ else:
         print("---")
         print(f"Error: {e}")
 EOF
-chmod +x "$PLUGINS_DIR/claude-usage.5m.py"
+chmod +x "$PLUGINS_DIR/claude-usage.1m.py"
 info "All files installed."
 
 # ── 4. Chrome extension ─────────────────────────────────────────────────────

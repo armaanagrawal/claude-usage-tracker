@@ -26,7 +26,7 @@ Updated 10:48 PM
 
 ## How it works
 
-- A **Chrome extension** fetches your usage from Claude.ai's internal API every 5 minutes (using your existing browser session — no API key needed)
+- A **Chrome extension** fetches your usage from Claude.ai's internal API every 1 minute (using your existing browser session — no API key needed)
 - It passes the data to a **native Python script** which writes it to `/tmp/claude_usage.json`
 - A **SwiftBar plugin** reads that file and renders the battery icon in the menu bar
 
@@ -61,7 +61,7 @@ Open SwiftBar and choose a plugins folder when prompted.
 
 ### 2. Copy the SwiftBar plugin
 
-Copy `swiftbar-plugin.py` into your SwiftBar plugins folder and rename it `claude-usage.5m.py` (the `5m` tells SwiftBar to refresh every 5 minutes).
+Copy `swiftbar-plugin.py` into your SwiftBar plugins folder and rename it `claude-usage.1m.py` (the `5m` tells SwiftBar to refresh every 1 minute).
 
 ### 3. Load the Chrome extension
 
